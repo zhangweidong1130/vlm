@@ -3,8 +3,11 @@ Docker镜像：https://hub.docker.com
 https://github.com/dongyubin/DockerHub
 
 1. Qwen2-vl技术报告: https://zhuanlan.zhihu.com/p/721908386
-![My Image](qwen2-vl.png)
+   ![My Image](qwen2-vl.png)
+   模型结构： vision encoder(ViT) + LLM (无 adapter)
+   
    Qwen-vl技术报告：
+   模型结构：openclip(VIT) + 单层crossattn + Qwen-7B
    stage1：预训练，大量图文pair对数据对齐视觉和LLM的特征，冻结LLM模块参数，训练vit和对齐模块crossattn(单层跨模态交叉注意力)。
    stage2：更高质量的图文多任务数据，更高的图片像素输入，全参数训练。
    stage3：指令微调阶段，固定视觉vit部分，微调LLM和对齐模块crossattn。
