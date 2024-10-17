@@ -6,6 +6,7 @@ dino_main:训练代码可参考此code
 
 多模态代码：
 1.Qwen2-VL-main.zip  千问多模态模型
+
 2.WePOINTS-main.zip  微信多模态模型，可参考测试流程
   We use VLMEvalKit to evaluate the performance of our models. Please follow the installation instructions to install the toolkit.
   Then, you can evaluate POINTS using the following command:
